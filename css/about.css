@@ -1,0 +1,222 @@
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: #081b29;
+    padding: 100px 10%;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* About Image */
+.about-img img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid #0ef;
+    background: #081b29;
+    animation: fadeIn 2s ease-out;
+}
+
+/* About Content */
+.about-content {
+    max-width: 600px;
+}
+
+.about-content .heading {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-content .heading span {
+    color: #0ef;
+}
+
+.about-content h3 {
+    font-size: 28px;
+    color: #0ef;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #d1d1d1;
+}
+
+.education {
+    background: #1f2937;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ef;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.education h3 {
+    font-size: 28px;
+    color: #0ef;
+    margin-bottom: 15px;
+}
+
+.education p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.what-i-can-do {
+    background: #081b29;
+    padding: 50px 10%;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+    justify-content: left;
+    text-align: left;
+}
+
+.what-i-can-do h3 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.what-i-can-do p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.8;
+}
+
+
+
+.button:hover {
+    background: #04b8c1;
+}
+
+/* Responsive Styles */
+
+/* Tablets and small desktops */
+@media (max-width: 991px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .about-content .heading {
+        font-size: 40px;
+    }
+
+    .about-content h3 {
+        font-size: 24px;
+    }
+
+    .what-i-can-do {
+        padding: 50px 5%;
+    }
+
+    .what-i-can-do h3 {
+        font-size: 30px;
+    }
+
+    .what-i-can-do p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .about-content .heading {
+        font-size: 32px;
+    }
+
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .education {
+        padding: 15px;
+    }
+
+    .education h3 {
+        font-size: 24px;
+    }
+
+    .education p {
+        font-size: 14px;
+    }
+
+    .about-img img {
+        width: 250px;
+    }
+
+    .what-i-can-do {
+        padding: 50px 5%;
+    }
+
+    .what-i-can-do h3 {
+        font-size: 28px;
+    }
+
+    .what-i-can-do p {
+        font-size: 14px;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 400px) {
+    .about-content .heading {
+        font-size: 28px;
+    }
+
+    .about-content h3 {
+        font-size: 20px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+    }
+
+    .education h3 {
+        font-size: 20px;
+    }
+
+    .education p {
+        font-size: 13px;
+    }
+
+    .about-img img {
+        width: 200px;
+    }
+
+    .what-i-can-do h3 {
+        font-size: 24px;
+    }
+
+    .what-i-can-do p {
+        font-size: 12px;
+    }
+}
