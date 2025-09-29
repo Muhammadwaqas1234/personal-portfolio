@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build: .                          # Build from local Dockerfile
+    container_name: portfolio
+    ports:
+      - "8080:80"                     # Access app at http://localhost:8080
+    restart: unless-stopped           # Auto-restart if stopped
+
+
