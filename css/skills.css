@@ -1,0 +1,116 @@
+/* Skills Section */
+.skills {
+    background: #081b29;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.skills .heading {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.skills .heading span {
+    color: #0ef;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.skill-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0ef;
+}
+
+.skill-bar {
+    width: 100%;
+    background: #1f2937;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Skill Progress bars default */
+.skill-progress {
+    height: 100%;
+    background: #0ef;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #081b29;
+    width: 0; /* start at 0% width */
+    transition: width 2s ease;
+}
+
+.skill-desc {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.html.active { width: 90%; }
+.css.active { width: 85%; }
+.javascript.active { width: 80%; }
+.react.active { width: 80%; }
+.node.active { width: 75%; }
+.flask.active { width: 70%; }
+.ml.active { width: 65%; }
+.db.active { width: 75%; }
+
+
+/* Tablets */
+@media (max-width: 991px) {
+    .skills .heading {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills .heading {
+        font-size: 36px;
+    }
+
+    .skill-box h3 {
+        font-size: 22px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .skills {
+        padding: 80px 5%;
+    }
+
+    .skills .heading {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .skill-box h3 {
+        font-size: 20px;
+    }
+
+    .skill-bar {
+        height: 16px;
+    }
+
+    .skill-progress {
+        font-size: 12px;
+        line-height: 16px;
+        padding-right: 8px;
+    }
+}

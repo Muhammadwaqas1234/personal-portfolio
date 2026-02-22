@@ -1,0 +1,145 @@
+/* Contact Section */
+.contact {
+    background: #081b29;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contact .heading {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.contact .heading span {
+    color: #0ef;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-item {
+    display: block; /* Full clickable */
+    background: #1f2937;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px #0ef;
+    text-decoration: none; /* No underline */
+    color: #ccc; /* Default text color */
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    background: #0ef;
+    transform: translateY(-10px);
+    color: #081b29;
+}
+
+/* Icon inside */
+.contact-item i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0ef;
+    transition: 0.5s;
+}
+
+.contact-item:hover i {
+    color: #081b29;
+}
+
+/* Heading inside */
+.contact-item h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contact-item:hover h4 {
+    color: #081b29;
+}
+
+/* Paragraph inside */
+.contact-item p {
+    font-size: 16px;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+.contact-item:hover p {
+    color: #081b29;
+    font-weight: bold;
+}
+
+/* Responsive */
+
+/* Tablets and small desktops */
+@media (max-width: 991px) {
+    .contact .heading {
+        font-size: 40px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .contact {
+        padding: 80px 5%;
+    }
+
+    .contact .heading {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .contact-info {
+        gap: 20px;
+    }
+
+    .contact-item {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .contact-item i {
+        font-size: 32px;
+    }
+
+    .contact-item h4 {
+        font-size: 20px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+    .contact .heading {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .contact-item {
+        padding: 20px;
+    }
+
+    .contact-item i {
+        font-size: 28px;
+    }
+
+    .contact-item h4 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 13px;
+    }
+}

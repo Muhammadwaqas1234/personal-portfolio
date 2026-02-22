@@ -1,0 +1,175 @@
+/* Already written header and basic reset above */
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10%;
+    height: 100vh;
+    background: #081b29;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #0ef;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #0ef;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #0ef;
+    color: #081b29;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #081b29;
+}
+
+/* Home Image */
+.home-img {
+    margin-left: 50px;
+}
+
+.home-img .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #0ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #081b29;
+    animation: float 4s ease-in-out infinite;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #0ef;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+
+/* Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive */
+
+/* Tablets and small desktops */
+@media (max-width: 991px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+        height: auto;
+    }
+
+    .home-img {
+        margin: 40px 0 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .home-img .circle {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .home-img .circle {
+        width: 200px;
+        height: 200px;
+    }
+}
