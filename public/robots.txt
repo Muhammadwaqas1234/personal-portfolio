@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muhammadwaqas1234.github.io/personal-portfolio/sitemap.xml

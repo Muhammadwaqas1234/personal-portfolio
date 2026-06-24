@@ -1,95 +1,51 @@
+# Muhammad Waqas — AI Engineer Portfolio
 
-# Muhammad Waqas – AI Engineer
+A 3D, interactive portfolio built with **React + Vite + react-three-fiber (Three.js)** and **Framer Motion**.
+Dark glassmorphism theme, animated 3D particle/torus-knot background, mouse-tilt cards, scroll reveals,
+animated counters, custom cursor — and full SEO so Google can index it.
 
-This is my personal portfolio website showcasing my work as an **AI Engineer** specializing in **Agentic AI** and **Retrieval-Augmented Generation (RAG)** systems.
+🔗 **Live:** https://muhammadwaqas1234.github.io/personal-portfolio/
 
-The portfolio highlights my projects, technical expertise, and contact information in a clean, responsive, and recruiter-friendly layout.
+## Tech stack
+- React 18 + Vite 5
+- react-three-fiber + @react-three/drei (3D scene)
+- Framer Motion (scroll animations)
+- Typed.js (rotating roles)
+- Plain CSS (single design-system stylesheet)
 
----
-
-## 🔹 Live Demo
-🌐 https://muhammadwaqas1234.github.io/personal-portfolio/
-
----
-
-## 🔹 About Me
-I design and build intelligent AI systems using:
-
-- Agentic AI (multi-agent orchestration, tool-augmented agents)
-- Retrieval-Augmented Generation (RAG)
-- Vector databases (FAISS)
-- Structured LLM outputs & memory-backed reasoning
-- High-performance APIs with FastAPI
-
-My focus is on building **production-grade AI pipelines** that reduce hallucinations, improve retrieval accuracy, and scale for real-world use cases.
-
----
-
-## 🔹 Tech Stack
-
-**Frontend**
-- HTML5  
-- CSS3  
-- JavaScript  
-- Typed.js  
-
-**Backend / AI**
-- Python  
-- FastAPI  
-- FAISS  
-- LLM APIs  
-- Embeddings & Vector Search  
-
----
-
-## 🔹 Featured Projects
-
-- **Multi-Agent GitHub Repository Analyzer**  
-  Built a multi-agent AI system analyzing 1,000+ repositories, reducing processing time by ~60% and improving detection recall by ~30%.
-
-- **Contextual RAG System**  
-  Built a scalable RAG pipeline indexing 10,000+ documents with FAISS, improving Recall@K by ~35% and reducing hallucinations by ~40%.
-
-- **AI Face Authentication System**  
-  Built a real-time face verification system using TensorFlow, FaceNet, and FastAPI with 94%+ accuracy.
-
----
-
-## 🔹 How to Run Locally
-
+## Run locally
 ```bash
-git clone https://github.com/Muhammadwaqas1234/personal-portfolio.git
-cd personal-portfolio
-open index.html
-````
-
-Or simply open `index.html` in your browser.
-
----
-
-## 🔹 Folder Structure
-
-```
-portfolio/
-│
-├── index.html
-├── css/
-├── js/
-├── images/
-└── README.md
+npm install      # install dependencies
+npm run dev      # start dev server (http://localhost:5173)
+npm run build    # production build -> dist/
+npm run preview  # preview the production build
 ```
 
+## Edit your content
+All text, projects, skills, stats, and links live in **`src/data/content.js`** — edit that one file,
+no need to touch components.
+
+## Deploy
+
+### Option A — GitHub Pages (automatic)
+This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`).
+1. Push to the `main` branch.
+2. In your repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. Every push to `main` rebuilds and publishes to
+   `https://muhammadwaqas1234.github.io/personal-portfolio/`.
+
+### Option B — Vercel / Netlify (free)
+- Import the repo. Build command `npm run build`, output dir `dist`.
+- If deploying at a **root domain** (not a `/personal-portfolio/` subpath), change
+  `base` in `vite.config.js` to `'/'` and update the absolute URLs in `index.html`,
+  `public/robots.txt`, and `public/sitemap.xml`.
+
+## SEO
+- Meta description, keywords, Open Graph + Twitter cards, canonical URL — in `index.html`.
+- JSON-LD `Person` structured data for Google rich results.
+- `public/robots.txt` and `public/sitemap.xml`.
+- After deploying, submit the site to [Google Search Console](https://search.google.com/search-console)
+  to get indexed faster.
+
 ---
-
-## 🔹 Contact
-
-📧 Email: [raiwaqasabid@gmail.com](mailto:raiwaqasabid@gmail.com)
-💼 LinkedIn: [https://www.linkedin.com/in/muhammad-waqas-111a68212](https://www.linkedin.com/in/muhammad-waqas-111a68212)
-💻 GitHub: [https://github.com/Muhammadwaqas1234](https://github.com/Muhammadwaqas1234)
-
----
-
-- A **portfolio case-study page template** (for each AI project)
-
-Say the word and I’ll craft them for you 😄
-```
+© 2026 Muhammad Waqas · AI Engineer · Agentic AI & RAG
