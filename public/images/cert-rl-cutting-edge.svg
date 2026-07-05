@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f4f5f7"/>
+  <rect x="18" y="18" width="764" height="564" fill="#ffffff" stroke="#e2e5ea" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#eef0f3" stroke-width="1"/>
+  <polygon points="600,18 740,18 740,470 670,430 600,470" fill="#dfe4ec"/>
+  <text x="670" y="78" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="6" fill="#3b4453">COURSE</text>
+  <text x="670" y="106" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="4" fill="#3b4453">CERTIFICATE</text>
+  <circle cx="670" cy="255" r="78" fill="#ffffff" stroke="#8a93a3" stroke-width="3"/>
+  <circle cx="670" cy="255" r="62" fill="none" stroke="#c3c9d4" stroke-width="1.5"/>
+  <text x="670" y="263" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="23" fill="#2a3342">coursera</text>
+  <text x="70" y="112" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="40" fill="#F05E23">&lt;packt&gt;</text>
+  <text x="70" y="196" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2" fill="#6b7280">JUN 28, 2026</text>
+  <text x="70" y="244" font-family="Georgia, serif" font-size="38" fill="#1f2430">Muhammad Waqas</text>
+  <text x="70" y="278" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6b7280">has successfully completed</text>
+  <text x="70" y="326" font-family="Georgia, serif" font-size="27" fill="#111827">Cutting-Edge Topics in Deep</text>
+  <text x="70" y="362" font-family="Georgia, serif" font-size="27" fill="#111827">Reinforcement Learning</text>
+  <text x="70" y="394" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6b7280">an online course authorized by Packt and offered through Coursera</text>
+  <text x="70" y="490" font-family="Georgia, serif" font-style="italic" font-size="42" fill="#111827">Packt</text>
+  <line x1="70" y1="503" x2="300" y2="503" stroke="#9aa1ad" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="70" y="540" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Verify at: coursera.org/verify/TWQHY2V7VB45</text>
+</svg>

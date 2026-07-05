@@ -91,36 +91,42 @@ export const skills = [
 
 export const projects = [
   {
+    icon: 'fa-phone-volume',
     badge: 'SaaS',
     title: 'Multi-Shops AI Voice Receptionist',
     desc: 'Real-time AI call assistant for auto-repair shops — streaming Deepgram STT, Claude reasoning, and Cartesia TTS on LiveKit with sub-second turn-taking, multi-tenant routing, and a secure click-to-talk widget.',
     tags: ['LiveKit', 'Claude', 'Twilio', 'FastAPI'],
   },
   {
+    icon: 'fa-building',
     badge: 'RAG',
     title: 'Construction RAG System',
     desc: 'Production RAG indexing 100+ construction documents with FAISS for low-latency semantic retrieval. Improved Recall@K via semantic chunking and multi-stage reranking; enforced strict context grounding to cut hallucinations.',
     tags: ['FAISS', 'Pinecone', 'HuggingFace'],
   },
   {
+    icon: 'fa-code-branch',
     badge: 'Multi-Agent',
     title: 'Multi-Agent GitHub Analyzer',
     desc: 'Autonomous multi-agent system that analyzes GitHub repositories — orchestrating sub-agents for parsing, summarization, and quality scoring. Parallel execution and intelligent routing handle codebases at scale.',
     tags: ['LangChain', 'FAISS', 'RAG'],
   },
   {
+    icon: 'fa-user-shield',
     badge: 'CV',
     title: 'AI Face Authentication System',
     desc: 'Real-time face verification at 94%+ accuracy using FaceNet embeddings and cosine similarity against an enrolled identity database. FastAPI endpoints serve concurrent validation requests without degradation.',
     tags: ['TensorFlow', 'FaceNet', 'FastAPI'],
   },
   {
+    icon: 'fa-heart-pulse',
     badge: 'Prototype',
     title: 'Numo — Maternal Nutrition Platform',
     desc: 'AI-powered platform delivering personalized nutrition guidance and evidence-based health calculators for pregnancy and breastfeeding, with RAG integration to ground responses in verified nutritional sources.',
     tags: ['JavaScript', 'FastAPI', 'OpenAI'],
   },
   {
+    icon: 'fa-gauge-high',
     badge: 'Tooling',
     title: 'RAG Benchmarking Suite',
     desc: 'Internal tooling measuring Recall@K, embedding quality, and hallucination rates across FAISS, Pinecone, and ChromaDB backends — informing architecture decisions on live client projects.',
@@ -154,26 +160,31 @@ export const certifications = [
     verifyUrl: 'https://digiskills.pk/verify',
   },
   {
+    image: img('cert-rl-spec.svg'),
     title: 'Deep Reinforcement Learning Hands-On (Specialization)',
     issuer: 'Packt · Coursera',
     verifyUrl: 'https://coursera.org/verify/specialization/1PMG8C1MO3OY',
   },
   {
+    image: img('cert-rl-foundations.svg'),
     title: 'Foundations of Deep Reinforcement Learning with PyTorch',
     issuer: 'Packt · Coursera',
     verifyUrl: 'https://coursera.org/verify/2C9IP7TUK3WB',
   },
   {
+    image: img('cert-rl-advanced.svg'),
     title: 'Advanced Deep RL Algorithms and Applications',
     issuer: 'Packt · Coursera',
     verifyUrl: 'https://coursera.org/verify/VGXR5C8YJALF',
   },
   {
+    image: img('cert-rl-cutting-edge.svg'),
     title: 'Cutting-Edge Topics in Deep Reinforcement Learning',
     issuer: 'Packt · Coursera',
     verifyUrl: 'https://coursera.org/verify/TWQHY2V7VB45',
   },
   {
+    image: img('cert-powerbi.svg'),
     title: 'PowerBI Report Development Crash Course',
     issuer: 'Coursera Guided Project',
     verifyUrl: 'https://coursera.org/verify/2E7LK66TS3WT',

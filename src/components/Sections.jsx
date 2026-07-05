@@ -83,7 +83,10 @@ export function Projects() {
         {projects.map((p, i) => (
           <Reveal i={i % 3} className="project-card" as="article" key={p.title}>
             <div className="project-info">
-              <span className="project-badge">{p.badge}</span>
+              <div className="project-head">
+                <div className="project-icon"><i className={`fas ${p.icon}`} /></div>
+                <span className="project-badge">{p.badge}</span>
+              </div>
               <h4>{p.title}</h4>
               <p>{p.desc}</p>
               <div className="project-tags">{p.tags.map((t) => <span key={t}>{t}</span>)}</div>
