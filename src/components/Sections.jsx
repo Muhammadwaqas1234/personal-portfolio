@@ -82,11 +82,8 @@ export function Projects() {
       <div className="projects-container">
         {projects.map((p, i) => (
           <Reveal i={i % 3} className="project-card" as="article" key={p.title}>
-            <div className="project-image">
-              <img src={p.image} alt={p.title} />
-              <span className="project-badge">{p.badge}</span>
-            </div>
             <div className="project-info">
+              <span className="project-badge">{p.badge}</span>
               <h4>{p.title}</h4>
               <p>{p.desc}</p>
               <div className="project-tags">{p.tags.map((t) => <span key={t}>{t}</span>)}</div>
@@ -108,7 +105,11 @@ export function Projects() {
               title={`${c.title} — view / verify`}
             >
               <div className="cert-thumb">
-                <img src={c.image} alt={c.title} loading="lazy" />
+                {c.image ? (
+                  <img src={c.image} alt={c.title} loading="lazy" />
+                ) : (
+                  <div className="cert-placeholder"><i className="fas fa-certificate" /><span>{c.issuer}</span></div>
+                )}
                 <span className="cert-zoom"><i className="fas fa-arrow-up-right-from-square" /></span>
               </div>
               <div className="cert-meta">
