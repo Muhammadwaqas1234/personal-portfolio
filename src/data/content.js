@@ -76,6 +76,12 @@ export const skills = [
     tags: ['TensorFlow', 'FaceNet', 'Scikit-learn'],
   },
   {
+    icon: 'fa-chess-knight',
+    title: 'Deep Reinforcement Learning',
+    desc: 'Deep Q-Networks, Policy Gradients, Actor-Critic methods, continuous action spaces, self-play, and multi-agent RL.',
+    tags: ['PyTorch', 'DQN', 'Actor-Critic'],
+  },
+  {
     icon: 'fa-microphone-lines',
     title: 'Realtime Voice AI',
     desc: 'Streaming STT→LLM→TTS voice pipelines with sub-second turn-taking and natural barge-in.',
